@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kynä Ja Paperi</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Kynä Ja Paperi</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/collection">Collection</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="content">
+                <div class="about-image">
+                    <img src="/images/me.jpeg" alt="Your Photo" class="img-square">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h3 class="lead">My name is Zainab and I am a Computer Engineer. I like art.</h3>
+                    <p>Hey there! I believe every card tells a story, and I'm here to help tell yours. Whether you're
+                        celebrating a big moment or just wanting to make someone smile, I pour my heart into creating
+                        cards
+                        that feel just right. From quirky birthday wishes to elegant wedding invitations, I love adding
+                        that
+                        special touch that makes each card uniquely yours. Every design comes with genuine creativity
+                        and a
+                        whole lot of care!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; Kynä Ja Paperi</p>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('.navbar');
+            nav.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>
