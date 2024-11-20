@@ -23,7 +23,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: #ddd;
+    background: #eeceda;
 }
 
 .navbar .container {
@@ -33,17 +33,12 @@ body {
 }
 
 .navbar-brand {
+    font-family: 'Lavishly Yours', cursive;
     font-weight: bold;
-    color: #f26a8d;
-    /* New color */
+    color: #d1748b;
     font-size: 1.5rem;
-    /* Adjust size if necessary */
-    text-transform: uppercase;
-    /* Optional: make text uppercase */
     transition: color 0.3s;
-    /* Smooth transition for any color changes */
     text-decoration: none;
-    /* Remove underline */
 }
 
 .nav-links {
@@ -57,10 +52,58 @@ body {
     color: #555;
 }
 
-.hero {
-    padding: 80px 0;
+.business-info {
+    font-family: 'Lavishly Yours', cursive;
+    padding: 40px 0;
     background: #fae7eb;
     margin-top: 60px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.business-content {
+    text-align: center;
+
+}
+
+.business-content h1 {
+    color: #d1748b;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    /* Adjust size as needed */
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.button-group .btn {
+    background-color: #d1748b;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.button-group .btn:hover {
+    background-color: #a4375c;
+}
+
+
+
+.about {
+    padding: 40px 0;
+    background: #fae7eb;
+    margin-top: 0;
     /* Offset for fixed navbar */
 }
 
