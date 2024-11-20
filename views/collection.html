@@ -1,29 +1,74 @@
-<!-- views/collection.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collection - My Card Business</title>
+    <title>Collection - Kynä Ja Paperi</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Card Collection</h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/collection">Collection</a>
-            <a href="/contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>My Card Collection</h2>
-            <p>Gallery of cards will go here.</p>
-        </section>
-    </main>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Kynä Ja Paperi</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/collection">Collection</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="collection">
+        <div class="container">
+            <h1 class="collection-title">My Card Collection</h1>
+            <div class="collection-grid">
+
+                <div class="card-item">
+                    <div class="card-image-container">
+                        <img src="/images/card1.png" alt="Card 1">
+                    </div>
+                    <div class="card-details">
+                        <h3>Happy Little Lemon</h3>
+                        <p>A cheerful birthday card with an adorable lemon character celebrating. Brings a burst of
+                            sunshine to any birthday celebration.</p>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-image-container">
+                        <img src="/images/card2.png" alt="Card 1">
+                    </div>
+                    <div class="card-details">
+                        <h3>Adventure Awaits</h3>
+                        <p>A whimsical card featuring a vibrant hot air balloon design. Perfect for new beginnings,
+                            graduations, or anyone starting a new chapter.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; Kynä Ja Paperi</p>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('.navbar');
+            nav.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
 </body>
 
 </html>
