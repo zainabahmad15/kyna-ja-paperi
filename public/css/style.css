@@ -150,13 +150,13 @@ body {
     }
 }
 
-.collection {
+.catalogue {
     padding: 120px 0 40px;
     background: #fae7eb;
     min-height: calc(100vh - 100px);
 }
 
-.collection-title {
+.catalogue-title {
     font-family: 'Lavishly Yours', cursive;
     text-align: center;
     color: #d1748b;
@@ -164,7 +164,7 @@ body {
     font-size: 3rem;
 }
 
-.collection-grid {
+.catalogue-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
@@ -225,7 +225,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .collection-grid {
+    .catalogue-grid {
         grid-template-columns: 1fr;
         padding: 15px;
     }
