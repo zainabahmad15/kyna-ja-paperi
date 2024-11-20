@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 // Define routes for serving HTML files
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../views/index.html')));
-app.get('/collection', (req, res) => res.sendFile(path.join(__dirname, '../views/collection.html')));
+app.get('/catalogue', (req, res) => res.sendFile(path.join(__dirname, '../views/catalogue.html')));
 app.get('/contact', (req, res) => res.sendFile(path.join(__dirname, '../views/contact.html')));
 
 // Start the server on a specified port
